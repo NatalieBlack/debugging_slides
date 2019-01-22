@@ -18,7 +18,7 @@
             <ul>
               <li> Read your code!</li>
               <li> Write short bits of code at a time & run the code frequently</li>
-              <li> Try bits of code in IRB first</li>
+              <li> Try bits of code in Python shell first</li>
               <li> Plan your code before you start writing</li>
               <li> Close things as soon as you open them</li>
               <li> Pair programming!</li>
@@ -30,8 +30,7 @@
             <h5>(More) Good Habits for Avoiding Bugs</h5>
             <ul>
               <li> Use a good text editor & use its shortcuts</li>
-              <li> Proper indentation</li>
-              <li> Using meaningful names (for variables, methods, classes)</li>
+              <li> Using meaningful names (for variables, functions, classes)</li>
               <li> Be consistent</li>
               <li> Comment your code</li>
               <li> Code review</li>
@@ -59,7 +58,7 @@
             <h5>(More) Debugging Techniques</h5>
             <ul>
               <li> Read the docs</li>
-              <li> Experiment in IRB</li>
+              <li> Experiment in Python shell</li>
               <li> Rubber duck debugging: explain the problem to someone else</li>
               <li> Google / Stack Overflow</li>
               <li> Use a debugger to set breakpoints</li>
@@ -68,68 +67,14 @@
         </section>
 
         <section>
-          <section>
-            <img src="undefined_method_error.png" width="900px" >
-          </section>
 
           <section>
-            <img src="stacktrace.png" width="900px">
+            <img src="stack_trace.png" width="900px">
           </section>
 
-          <section>
-            <h1>Installing Pry</h1>
-            <pre>
-<code class="hljs">
-$ gem install pry
-$ rbenv rehash
-</code>
-</pre>
-          </section>
 
         </section>
 
-        <section>
-          <section>
-            <ul>
-              <li>
-                <b><p>syntax error, unexpected keyword_end, expecting end-of-input</p></b>
-                <p>You have an extra end somewhere (could be anywhere) in your file</p>
-              </li>
-              <li>
-                <b><p>syntax error, unexpected end-of-input, expecting keyword_end (SyntaxError)</p></b>
-                <p>You are missing an end somewhere (could be anywhere) in your file</p>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <b><p>wrong number of arguments (given _, expected _) (ArgumentError)</p></b>
-            <ul>
-              <li><p>It could be that you're passing the wrong number of arguments</p></li>
-              <li><p>It could be that you didn't set up the arguments correctly in the method definition</p></li>
-            <ul>
-          </section>
-          <section>
-            <b><p>undefined method `_' for nil:NilClass (NoMethodError)</p></b>
-            <p>What are you trying to call that method on? The problem isn't the method - it's that the variable you're calling it on contains nil.  Look into where that variable got defined/assigned.</p>
-          </section>
-          <section>
-            <b><p>undefined method `____' for ____ (NoMethodError)</p></b>
-            <ul>
-              <li><p>It could be that you are trying to call a method that doesn't exist.</p></li>
-              <li><p>It could be that the thing you're calling the method on isn't the data type you think it is.</p></li>
-              <li><p>It could be that you can't use that data type the way you think you can</p></li>
-            </ul>
-          </section>
-          <section>
-            <b><p>undefined local variable or method `_' for _ (NameError)</p></b>
-            <ul>
-              <li><p>It could be that you didn't define that method/variable</p></li>
-              <li><p>It could be that you have a typo</p></li>
-              <li><p>It could be that you don't have access to that method/variable in the place you're trying to use it</p></li>
-            </ul>
-          </section>
-
-          </section>
         </section>
 
 
